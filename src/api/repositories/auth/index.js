@@ -4,7 +4,6 @@ const apiLogin = async (body) => {
   const { data, error } = await clientBase("auth/login", "POST", null, false, {
     body,
   });
-  console.log(data);
 
   return { data, error };
 };
